@@ -1,0 +1,52 @@
+.card{
+    width: 320px;
+    height:470px ;
+    border-radius:10px ;
+    background-image: url("https://images.pexels.com/photos/18509700/pexels-photo-18509700/free-photo-of-glass-jug-and-glasses-of-gin-cocktail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+}
+hr{
+    border: 1px solid white
+}
+.screen{
+    width: 300px;
+    height:450px ;
+    padding:10px;
+
+}
+.screen:hover{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(48,213,200, 0.75);
+    border-radius: 9px;
+}
+#buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+#buy > *{
+    width:50px ;
+    height: 30px;
+    padding: 10px;
+    border-radius:10px ;
+}
+#buy > *:hover{
+    background-color:#32cd32;
+
+}
+h1{
+    text-align: left;
+    color:#FFC200; 
+}
+h2{
+    text-align: center;
+    color:#FFC200; 
+   
+}
+p{
+    text-align: left;
+}

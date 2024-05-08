@@ -1,0 +1,45 @@
+#userprofile{
+    width:100vw ;
+    height:100vh ;
+    position: fixed;
+    display: grid;
+    grid-template-rows:0.2fr 1.8fr ;
+    background-color:#f9f9f9 ;
+     
+}
+#header{
+    background-color: rgba(50, 205, 50, 0.884);
+
+}
+#header > h1{
+    font-size: 40px;
+}
+#user{
+    display: flex;
+    padding:30px ;
+    gap:30px;
+    justify-content: flex-start;
+}
+#user > span{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+}
+img{
+    object-fit: cover;
+    object-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+h2{
+    color:#32CD32 ;
+}
+.material-symbols-outlined{
+    color: #32CD32;
+}
+p{
+    color: #32CD32;
+
+}
