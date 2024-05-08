@@ -1,4 +1,4 @@
-import CocktailList from "./CocktailList";
+
 import UserProfile from "./UserProfile";
 import ErrorPage from "./ErrorPage";
 import Form from "./form";
@@ -11,11 +11,6 @@ const routes = [
     element: <Homepage />,
     errorElement: <ErrorPage />
   }, 
-  {
-    path: "/cocktails",
-    element: <CocktailList />,
-    errorElement: <ErrorPage />
-  },
   {
     path: "/userprofile",
     element: <UserProfile />,

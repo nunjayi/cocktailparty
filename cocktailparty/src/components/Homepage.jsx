@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/Homepage.css'
+import NavBar from "./NavBar"
 function Homepage(){
     function navigate(e) {
         // don't make a GET request
@@ -10,6 +11,7 @@ function Homepage(){
 
     return(
         <div className="hero">
+            <NavBar />
             <div id="homeimg"></div>
             <div id="login">
                 <h1>Cocktail</h1>
