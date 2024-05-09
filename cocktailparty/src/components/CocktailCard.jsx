@@ -1,22 +1,38 @@
 import React from "react";
-import '../styles/cocktailcard.css'
+import "../styles/cocktailcard.css";
 
-function CocktailCard({prop}){
-    return(
-        <div className='card'>
-        <div>
-          <h1>title</h1>
-          <p>ingredient 1</p>
-          <p>ingredient 2</p>
-          <span class="material-symbols-outlined">shopping_cart</span>
+function CocktailCard({ name, ingredients, image }) {
   
-        </div>
-        <div>
-          <img src="https://media.istockphoto.com/id/480045080/photo/rum-and-cola-cuba-libre.webp?s=1024x1024&w=is&k=20&c=WyMYJYCwCH0bKKvmmFmQwkuFTW4OgauLDcc3ne-R4dc=" alt="" />
-        </div>
+  function addToShoppingList() {
+    const data = {
+      name: name,
+      ingredients: ingredients,
+      image: image
+    };
+
+    fetch('http://localhost:3000/shoppingList', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+  }
+  
+  return (
+    <div className="card">
+      <div>
+        <h1>{name}</h1>
+        {ingredients.map((ingredient, index) => (
+          <p key={index}>{ingredient}</p>
+        ))}
+        <span className="material-symbols-outlined" onClick={addToShoppingList}>shopping_cart</span>
       </div>
-     
-    )
+      <div>
+        <img src={image} alt="Cocktail" />
+      </div>
+    </div>
+  );
 }
 
-export default CocktailCard
+export default CocktailCard;

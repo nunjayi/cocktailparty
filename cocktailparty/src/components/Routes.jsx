@@ -1,10 +1,9 @@
-
+import CocktailList from "./CocktailList";
 import UserProfile from "./UserProfile";
 import ErrorPage from "./ErrorPage";
 import Form from "./form";
 import Homepage from "./Homepage";
-import CocktailCard from "./CocktailCard";
-
+import ShoppingList from "./ShoppingList";;
 
 const routes = [
   {
@@ -12,6 +11,11 @@ const routes = [
     element: <Homepage />,
     errorElement: <ErrorPage />
   }, 
+  {
+    path: "/cocktails",
+    element: <CocktailList />,
+    errorElement: <ErrorPage />
+  },
   {
     path: "/userprofile",
     element: <UserProfile />,
@@ -21,13 +25,17 @@ const routes = [
     path: "/login",
     element: <Form />,
     errorElement: <ErrorPage />
-  } ,
-   {
+  },
+  {
     path: "/signup",
     element: <Form />,
     errorElement: <ErrorPage />
   },
-
+  {
+    path: "/shoppinglist", 
+    element: <ShoppingList />, 
+    errorElement: <ErrorPage />
+  }
 ];
 
 export default routes;
