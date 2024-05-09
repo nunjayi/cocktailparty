@@ -18,6 +18,7 @@ function NavBar() {
         <NavLink to="/UserProfile" className="navItem userprofile" activeClassName="active">
           User Profile
         </NavLink>
+       
       </nav>
     </>
   );
