@@ -1,0 +1,40 @@
+.error{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem; 
+    color: #ff0000; 
+    margin-bottom: 20px;
+    font-style: italic; 
+}
+
+.errorcontainer {
+    margin: 120px auto; 
+    text-align: center; 
+    margin-top: 120px;
+    margin-left: 120PX;
+    margin-right: 120PX;
+}
+
+/* Heading Styles */
+.errormessage {
+    background-color: #ec8d57; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem; 
+    color: #ffffff; 
+    margin-bottom: 20px; 
+    font-style: italic; 
+    border-radius: 5px; 
+}
+
+.returnbutton {
+    padding: 10px 20px; 
+    background-color: #3ec9a7;
+    color: #FFFFFF; 
+    border: none; 
+    border-radius: 88px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.returnbutton:hover {
+    background-color: #2C7A7B; 
+}
