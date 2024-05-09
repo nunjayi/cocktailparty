@@ -1,7 +1,7 @@
 
 import UserProfile from "./UserProfile";
 import ErrorPage from "./ErrorPage";
-import Form from "./form";
+import Form from "./Form";
 import Homepage from "./Homepage";
 
 

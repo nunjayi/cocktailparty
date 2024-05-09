@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/form.css'
 
 function Form({status}){
     return(
-        <div>
+        <div id="form">
             <form action="submti">
                 <label htmlFor="name">username</label><br />
                 <input type="text" /><br />
