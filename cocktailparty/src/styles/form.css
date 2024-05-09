@@ -1,0 +1,47 @@
+/* form.css */
+
+#form {
+    background-color: #f0f8ea; /* Light green background */
+    padding: 12px; /* Approximately 0.5cm at 96ppi */
+    border-radius: 6px; /* Approximately 0.25cm at 96ppi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+    width: 480px; /* Approximately 5cm at 96ppi */
+    height: 288px; /* Approximately 3cm at 96ppi */
+}
+
+.form-group {
+    margin-bottom: 8px; /* Approximately 0.33cm at 96ppi */
+}
+
+label {
+    display: block;
+    margin-bottom: 4px; /* Approximately 0.17cm at 96ppi */
+    font-size: 14px; /* Keep font size consistent */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 6px; /* Approximately 0.25cm at 96ppi */
+    font-size: 14px; /* Keep font size consistent */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 6px; /* Approximately 0.25cm at 96ppi */
+    font-size: 14px; /* Keep font size consistent */
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
