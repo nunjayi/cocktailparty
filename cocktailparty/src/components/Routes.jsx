@@ -1,8 +1,9 @@
 
 import UserProfile from "./UserProfile";
 import ErrorPage from "./ErrorPage";
-import Form from "./Form";
+import Form from "./form";
 import Homepage from "./Homepage";
+import CocktailCard from "./CocktailCard";
 
 
 const routes = [
@@ -25,7 +26,8 @@ const routes = [
     path: "/signup",
     element: <Form />,
     errorElement: <ErrorPage />
-  }
+  },
+
 ];
 
 export default routes;
