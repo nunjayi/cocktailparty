@@ -1,51 +1,29 @@
-// Homepage.jsx
-import React, { useState } from "react";
-import '../styles/Homepage.css';
+import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
+import '../styles/homepage.css'
 
-function Homepage() {
-    const [showLogin, setShowLogin] = useState(false);
-    const [showSignup, setShowSignup] = useState(false);
 
-    const handleLoginClick = () => {
-        setShowLogin(true);
-        setShowSignup(false);
-    };
 
-    const handleSignupClick = () => {
-        setShowSignup(true);
-        setShowLogin(false);
-    };
+function Homepage(){
 
-    return (
-        <div className="hero">
-            <NavBar />
-            <div id="homeimg"></div>
-            <div id="login">
-                <h1>Cocktail</h1>
-                <hr />
-                <h3>Welcome!</h3><br />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse rerum dolor incidunt eos neque,
-                     veniam ipsam quas odit praesentium ipsa sed accusamus tempora quis. Quo impedit repellat ea id esse!</p>
-                <div id="loginnav">
-                    <span><button onClick={handleLoginClick}>Login</button></span>
-                    <span><button onClick={handleSignupClick}>Sign up</button></span>
-                </div>
-            </div>
-            {showLogin && (
-                <React.Suspense fallback={<div>Loading...</div>}>
-                    <LazyForm type="login" />
-                </React.Suspense>
-            )}
-            {showSignup && (
-                <React.Suspense fallback={<div>Loading...</div>}>
-                    <LazyForm type="signup" />
-                </React.Suspense>
-            )}
+
+ return(
+    <div className="homepage" >
+      <NavBar  />
+      <div className="main">
+        <div></div>
+        <div className="image"><img src="https://images.pexels.com/photos/3323682/pexels-photo-3323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" /></div>
+        <div>
+          <h1>Sip and Savor: Your Event, Your Drinks.</h1>
+          <h2>Customized Cocktails for Memorable Occasions.</h2>
+          
         </div>
-    );
+        <div></div>
+      </div>
+      <div className="footer">
+      </div>
+
+    </div>
+ )
 }
-
-const LazyForm = React.lazy(() => import("./form"));
-
-export default Homepage;
+export default Homepage

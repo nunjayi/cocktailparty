@@ -1,56 +1,29 @@
-.lora-login{
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.homepage{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 0.2fr 1.6fr 0.2fr;
+    height: 100vh;
+    gap: 2px;
+}
+.main{
+    display: grid;
+    grid-template-columns:0.1fr 0.9fr 0.9fr 0.1fr ;
+    gap: 2px;
+}
+.main > *{
+    background: linear-gradient(1deg, #ffffff, #FFCC80) ;;
+}
+.footer{
+    background: linear-gradient(1deg, #ffffff, #FFCC80)
+}
+.image{
+    object-fit: cover;
+    object-position: center;
+
+}
+.image img {
+    height:600px;
+    width: 100%;
   }
   
-.hero{
-    width: 100%;
-    height: 100vh;
-    background-color: #32CD32;
-    position: fixed;
-    background-position: center;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    padding: 30px;
-}
-#homeimg{
-    background-image: url("https://images5.alphacoders.com/449/449786.jpg");
-    background-position: center;
-    background-size: cover;
-}
-#login{
-    background-color: #175E17;
-    padding: 10px;
-
-}
-h1{
-    color:  #FFC200;
-}
-#loginnav{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-#loginnav > *{
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 15px;
-    text-decoration: none;
-   
-
-}
-hr{
-    border: 2px solid #FFC200;
-}
-#loginnav > *:hover{
-    background-color: #FFC200;
-}
-#loginnav > * > *{
-    text-decoration: none;
-    color: white;
-}

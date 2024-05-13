@@ -1,18 +1,65 @@
 {
-    "user":[
-        {
-            "id":"23r5",
-            "name":"ari gikaira",
-            "password":"@ari",
-            "bucketList":[
-                "b","a"
-            ],
-            "history":[
-                "b","a"
-            ]
-
-
-        }
-
-    ]
+  "user": [
+    {
+      "id": "3aa2",
+      "name": "Ari Gikaira",
+      "password": "@24",
+      "date_created": "2024-05-10T06:20:01.779Z",
+      "wishlist": [],
+      "view_history": []
+    },
+    {
+      "id": "fd20",
+      "name": "jason timber",
+      "password": "@26",
+      "date_created": "2024-05-11T08:13:00.423Z",
+      "wishlist": [],
+      "view_history": []
+    },
+    {
+      "id": "65d9",
+      "name": "pusha ",
+      "password": "@21",
+      "date": "2024-05-12T19:28:43.303Z",
+      "wishlist": []
+    },
+    {
+      "id": "de08",
+      "name": "ninja",
+      "password": "@13",
+      "date": "2024-05-12T22:55:32.775Z",
+      "wishlist": []
+    },
+    {
+      "id": "eb4b",
+      "name": "nsh",
+      "password": "",
+      "date": "2024-05-12T22:56:41.792Z",
+      "wishlist": []
+    },
+    {
+      "id": "4fe2",
+      "name": "jj",
+      "password": "@14",
+      "date": "2024-05-12T23:58:52.849Z",
+      "wishlist": []
+    }
+  ],
+  "lastlog": [
+    {
+      "id": "fe1b",
+      "name": "Ari Gikaira",
+      "password": "@24"
+    },
+    {
+      "id": "4bd3",
+      "name": "Ari Gikaira",
+      "password": "@24"
+    },
+    {
+      "id": "e443",
+      "name": "jj",
+      "password": "@14"
+    }
+  ]
 }

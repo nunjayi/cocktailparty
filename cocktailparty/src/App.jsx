@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import Homepage from './components/Homepage'
+import React, { useState } from "react";
+import Homepage from "./components/HomePage";
 
-function App() {
-  const [logged,setLogin]= useState(false)
- if(logged == false){
-  return (
-        <Homepage />
+
+function App(){
+  return(
+    <Homepage />  
+
   )
-}
 }
 
 export default App
-
-
